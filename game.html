@@ -1,0 +1,52 @@
+ <!DOCTYPEhtml>
+  <html>
+    <head>
+      <title>Pokemon</title>
+      <link href="game.css" style="text/css" rel="stylesheet">
+
+
+    </head>
+    <body>
+      <div id="main">
+        <h1>Pokemon</h1>
+        <div id = "Pokemon" class="Squirtle">
+          <div class="pictureOne" onclick="squirtle()"></div>
+          <button class="squirtleLink" onclick="squirtle()"> SQUIRTLE </button>
+        </div>
+        <div id = "Pokemon" class="Charmander">
+          <div class="pictureTwo" onclick="charmander()"></div>
+          <button class="charmanderLink" onclick="charmander()"> CHARMANDER </button>
+        </div>
+        <div id = "Pokemon" class="Bulbasaur">
+          <div class="pictureThree" onclick="bulbasaur()" ></div>
+          <button class="bulbasaurLink" onclick="bulbasaur()"> BULBASAUR </button>
+        </div>
+        <button id = "play" onclick="changeBack()">Play</button>
+        <h2 id="chosenPokemon"></h2>
+      </div>
+
+      <div id="game">
+        <div id = "grass"></div>
+        <div id="building">
+          <img src="images/hospital.png">
+        </div>
+        <div id = "water"></div>
+        <div id="character"></div>
+
+        <p id=message onclick="changeBackground(), changeToGame(pokemon)"></p>
+      </div>
+
+      <div id="battle">
+        <div class="enemyBattle"><progress id="enemyHealth" value="100" max="100"></progress><div id ="pokeball" onclick="catchPokemon()">PokeBall</div></div>
+        <div class="enemyPokemon"> <img id = "enemy" src="images/magicarp.png"></div>
+        <div id="text"> A pokemon has spawned</div>
+        <div class="allyPokemon"><progress id="allyHealth" value="100" max="100"></progress><div id="level"></div><img id ="allyImage"></div>
+        <div class="allyBattle"><progress id="allyExperience" value="0" max="100"></progress><div id ="moveOne" class="move" onclick="subtractEnemyHealth()"></div><div id ="moveTwo" class="move" onclick="subtractEnemyHealth()"></div></div>
+      </div>
+      <div id="hospital">
+        <div id="place"><img id = "image" src="images/place.png"></div>
+      </div>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script src="game.js"></script>
+  </html>

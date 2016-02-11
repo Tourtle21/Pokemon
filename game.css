@@ -1,0 +1,264 @@
+body {
+  background-image: url(images/dirt.png);
+}
+#character {
+  height: 35px;
+  width:30px;
+  background-image: url(images/character.png);
+  z-index: 200;
+  top: 100px;
+  position: relative;
+  margin: 0px;
+  visibility: hidden;
+}
+.characterUp {
+  background-position: -30px -35px;
+}
+.characterLeft {
+  background-position: -30px 0px;
+}
+.characterRight {
+  background-position: 0px -35px;
+}
+#grass {
+  background-image: url(images/grass.png);
+  position: relative;
+  height: 512px;
+  width: 512px;
+  visibility: hidden;;
+}
+#water {
+  background-image: url(images/water.png);
+  height: 770px;
+  width: 407px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  visibility: hidden;
+}
+p {
+  position: relative;
+  top: 150px;
+  z-index: 100;
+  color: red;;
+  left: 30%;
+  font-size: 20px;
+  text-decoration: none;
+  display: inline;
+  visibility: hidden;
+}
+
+#message{
+  cursor: pointer;
+  position: relative;
+  top: -10px;
+}
+
+#text {
+  text-align: center;
+  cursor: pointer;
+}
+#battle {
+  text-align: center;
+  height: 500px;
+  width: 500px;
+  background-color: grey;
+  position: absolute;
+  top: 150px;
+  left: 32%;
+  visibility: hidden;
+}
+#game {
+  visibility: hidden;
+  position: absolute;
+  top: 0px;
+  width: 99.25%;
+}
+.enemyBattle {
+  height: 200px;
+  width: 300px;
+  border: 20px;
+  border-color: black;
+  background: black;
+}
+.enemyPokemon {
+  height: 200px;
+  width: 200px;
+  background: white;
+  position: absolute;
+  top: 0px;
+  left: 300px;
+}
+.allyBattle {
+  height: 200px;
+  width: 300px;
+  border: 20px;
+  border-color: black;
+  background: black;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+
+}
+.allyPokemon {
+  height: 200px;
+  width: 200px;
+  background: white;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+img {
+  height: 160px;
+  width: 110px;
+  margin: auto;
+  display: block;
+}
+body{
+  background: black;
+
+}
+h1{
+  color: purple;
+  text-align: center;
+}
+a{
+  text-decoration: none;
+  color: purple;
+  font-size: 50px;
+
+}
+#play {
+  height: 100px;
+  width: 200px;
+  position: relative;
+  visibility: hidden;
+  cursor: pointer;
+}
+#Pokemon {
+  height: 200px;
+  width: 210px;
+
+  padding: 10px;
+}
+.Squirtle {
+  position: absolute;
+  left: 0px;
+  background-color: blue;
+}
+.Bulbasaur {
+  position: absolute;
+  right: 0px;
+  top: 80px;
+  background: green;
+}
+.Charmander {
+  background-color: red;
+  margin: auto;
+  display: block;
+}
+.pictureOne {
+  height: 220px;
+  width: 220px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-image: url(images/squirtleMain.png);
+  cursor: pointer;
+}
+.pictureTwo {
+  height: 215px;
+  width: 230px;
+  position: relative;
+  left: -10px;
+  top: -7px;
+  background-image: url(images/charmander.png);
+  cursor: pointer;
+}
+.pictureThree {
+  height: 221px;
+  width: 224px;
+  position: relative;
+  left: -8px;
+  top: -11px;
+  background-image: url(images/bulbasaur.png);
+  cursor: pointer;
+}
+.bulbasaurLink {
+  color: green;
+  position: relative;
+  left: 70px;
+  cursor: pointer;
+}
+.charmanderLink {
+  color: red;
+  position: relative;
+  left: 50px;
+  cursor: pointer;
+}
+.squirtleLink {
+  color: blue;
+  position: relative;
+  left: 50px;
+  top: 215px;
+  cursor: pointer;
+}
+#chosenPokemon {
+  color: purple;
+  position: relative;
+  top: 200px;
+  text-align: center;
+}
+.move {
+  color: white;
+  visibility: hidden;
+}
+#moveOne{
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  cursor: pointer;
+}
+#building{
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: -510px;
+  left: 557px;
+}
+#hospital {
+  visibility: hidden;
+  height: 100px;
+}
+#hospital img {
+  height: 75px;
+  width: 50%;
+  position: absolute;
+  top: 0px
+}
+#enemyHealth {
+  background-color: green;
+}
+#allyHealth {
+  background-color: green;
+}
+#allyExperience {
+  background-color: green;
+}
+progress#allyHealth::-webkit-progress-value, progress#enemyHealth::-webkit-progress-value {
+    background: red;
+}
+
+#moveTwo {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  cursor: pointer;
+}
+#pokeball {
+  color: white;
+  position: absolute;
+  top: 50px;
+  left: 125px;
+  cursor: pointer;
+}
