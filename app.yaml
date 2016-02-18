@@ -1,0 +1,15 @@
+module: pokemon
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: game.html
+  upload: game.html
+
+- url: /(.+)
+  static_files: \1
+  upload: .+\.(html|js|css)
+- url: /images
+  static_dir: images
